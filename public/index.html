@@ -6,6 +6,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/login.js"></script>
     <title>Plasma</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon"  type="image/ico" href="./resources/icon.png"/></head>
@@ -32,20 +33,20 @@
     
         <div class="buttons2">
             <div class="google">
-                <a href="./blood.html">
-                    <button>
+                
+                    <button id="signin_google">
                         <img src="./resources/g.svg" alt="google icon">
                         <p>Sign in with Google </p>
                     </button>
-               </a>
+                
                  </div>
             <div class="facebook">
-                <a href="./blood.html">
-                <button>
+                
+                <button id="signin_facebook">
                     <img src="./resources/icons8-facebook.svg" alt="">
                     <p> Sign in with Facebook</p>
                 </button>
-            </a>
+            
             </div>
         </div>
     
@@ -190,5 +191,14 @@ $(document).ready(function(){
   });
 });
 </script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+
+<script src="./scripts/login.js"></script>
 </body>
 </html>
